@@ -32,7 +32,7 @@ const query = req.body.cityName;
 const icon = weatherData.weather[0].icon
 const imageUrl = "https://openweathermap.org/img/wn/" + icon + "@2x.png"
 
-    res.write("<p>the weather is currently " + weatherDescription + " </p>")
+    res.write("<p>the current weather is " + weatherDescription + " </p>")
             res.write("<h1>the temperature of " + query + " is " + temperature + " degrees celcius</h1>");
         res.write("<img src=" + imageUrl + ">");
             res.send();
